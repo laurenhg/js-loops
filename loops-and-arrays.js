@@ -1,10 +1,10 @@
 // ==========================================
 // Opdracht 1
-// Schrijf een script dat iedere naam in onderstaande array vervangt door een koosnaampje, door er -"je" achter te plakken.
-// Zorg ervoor dat dit ook zou werken als de array wel 100 of 200 namen zou bevatten!
+// write a script that replaces each name in the array below with a pet name by appending -"je" after it.
+// // Make sure this would also work if the array contained 100 or 200 names!
 // ==========================================
 
-const names = ["Henk", "Piet", "Fred", "Joop"];
+
 
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
@@ -13,16 +13,29 @@ const names = ["Henk", "Piet", "Fred", "Joop"];
 // console.log(names) geeft: ["Henkje", "Pietje", "Fredje", "Joopje"]
 
 
-
+const names = ["Henk", "Piet", "Fred", "Joop"];
+const petNames = []
+for(let i = 0; i< names.length; i++){
+   console.log(petNames [i] = names [i] + 'je');
+}
 
 
 // ==========================================
 // Opdracht 2
-// Schrijf een script dat ieder EVEN getal in onderstaande array met 2 vermenigvuldigd, en ieder ONEVEN getal met 3
-// Zorg ervoor dat dit ook zou werken als de array wel 100 of 200 getallen zou bevatten!
+// Write a script that multiplies every EVEN number in the array below by 2, and every ODD number by 3
+// // Make sure this would also work if the array contained 100 or 200 numbers!
 // ==========================================
 
 const numbers = [2, 4, 5, 29, 38];
+const evenNumbers =[]
+const oddNumbers = []
+for(let i =0; i< numbers.length;  i++) {
+   if (numbers[i] % 2 === 0) {
+      console.log(evenNumbers [i] = numbers[i] * 2);
+   }else if(numbers[i] % 2 !==0){
+   console.log(oddNumbers [i] = numbers [i] *3);
+   }
+}
 
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
@@ -32,30 +45,27 @@ const numbers = [2, 4, 5, 29, 38];
 
 
 
-
-
 // ==========================================
 // Opdracht 3
-// Schrijf een script dat voor de maat van ieder vierkant in onderstaande array, het volume uitrekent.
-// Het volume van een vierkant is Lengte x Breedte x Hoogte
-// Vervolgens moet de huidige waarde in de array overschreven worden met: "Het volume van [a] is [b]"
-// Zorg ervoor dat dit ook zou werken als de array wel 100 of 200 getallen zou bevatten!
-// ==========================================
+// Write a script that calculates the volume for the size of each square in the array below.
+// // The volume of a square is Length x Width x Height
+// // Then the current value in the array must be overwritten with: "The volume of [a] is [b]"
+// // Make sure this would also work if the array contained 100 or 200 numbers!
 
 const squares = [30, 2, 8, 24, 11];
 
-// Verwachtte uitkomsten:
-// Vóór het script zie je de originele waardes:
-// console.log(squares) geeft: [30, 2, 8, 24, 11];
-// Na jouw script zie je de aangepaste waardes:
-// console.log(squares) geeft:
-// [
-//   'Het volume van 30 is 27000',
-//   'Het volume van 2 is 8',
-//   'Het volume van 8 is 512',
-//   'Het volume van 24 is 13824',
-//   'Het volume van 11 is 1331'
-// ]
+// Expected outcomes:
+// // Before the script you see the original values:
+// // console.log(squares) returns: [30, 2, 8, 24, 11];
+// // After your script you will see the adjusted values:
+// // console.log(squares) returns:
+// // [
+// // 'The volume of 30 is 27000',
+// // 'The volume of 2 is 8',
+// // 'The volume of 8 is 512',
+// // 'The volume of 24 is 13824',
+// // 'The volume of 11 is 1331'
+// // ]
 
 
 

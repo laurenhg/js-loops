@@ -1,6 +1,6 @@
 // ==========================================
 // Opdracht 1a
-// Schrijf een script dat voor iedere student in de array de score (het getal uit de property "score") in de terminal print
+// Write a script that prints the score (the number from the property "score") for each student in the array in the terminal
 
 const scores = [
     {name: 'Max', score: 83, grade: null},
@@ -22,10 +22,10 @@ const scores = [
 
 // ==========================================
 // Opdracht 1b
-// Breid je script uit door voor iedere student de score om te rekenen naar een letter en dit in de terminal te printen
-// < 60 = F, < 70 = D, <80 = C, <90 B, <100 = A
-// Zorg ervoor dat dit ook zou werken als de array wel 100 of 200 getallen zou bevatten!
-// Verwachtte uitkomsten:
+// Expand your script by converting the score for each student into a letter and printing this in the terminal
+// // < 60 = F, < 70 = D, <80 = C, <90 B, <100 = A
+// // Make sure this would also work if the array contained 100 or 200 numbers!
+// // Expected outcomes:
 // B
 // C
 // A
@@ -38,15 +38,15 @@ const scores = [
 
 // ==========================================
 // Opdracht 1c
-// Breid je script uit door de bijbehorende letter op te slaan in de 'grade'-property van ieder student-object in de array.
-// Vóór het script zie je de originele objecten,
-// Na jouw script zie je de aangepaste objecten:
-// console.log(scores) geeft: [
-//  { name: 'Max', score: 83, grade: 'B' },
-//  { name: 'David', score: 77, grade: 'C' },
-//  { name: 'Khalid', score: 92, grade: 'A' },
-//  { name: 'Rianne', score: 66, grade: 'D' }
-//  ];
+// Extend your script by storing the corresponding letter in the 'grade' property of each student object in the array.
+// // Before the script you see the original objects,
+// // After your script you will see the custom objects:
+// // console.log(scores) returns: [
+// // { name: 'Max', score: 83, grade: 'B' },
+// // { name: 'David', score: 77, grade: 'C' },
+// // { name: 'Khalid', score: 92, grade: 'A' },
+// // { name: 'Rianne', score: 66, grade: 'D' }
+// // ];
 // ==========================================
 
 
@@ -55,7 +55,7 @@ const scores = [
 
 // ==========================================
 // Opdracht 2
-// Schrijf een script die e-mailadressen genereert voor al onze medewerkers. Sla dit op in een nieuwe property "email" die je toevoegt aan iedere medewerker.
+// Write a script that generates email addresses for all our employees. Save this in a new property "email" that you add to each employee.
 
 const NOVIEmployees = [
     {firstName: 'Nova', lastName: 'Eeken'},
