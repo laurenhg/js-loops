@@ -52,8 +52,14 @@ for(let i =0; i< numbers.length;  i++) {
 // // Then the current value in the array must be overwritten with: "The volume of [a] is [b]"
 // // Make sure this would also work if the array contained 100 or 200 numbers!
 
-const squares = [30, 2, 8, 24, 11];
 
+
+const squares = [30, 2, 8, 24, 11];
+for(let i=0; i<squares.length; i++) {
+  const cube =  squares[i] * squares[i] * squares [i]
+console.log('The volume of ' + squares[i] + ' is ' + cube);
+
+}
 // Expected outcomes:
 // // Before the script you see the original values:
 // // console.log(squares) returns: [30, 2, 8, 24, 11];
