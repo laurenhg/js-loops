@@ -1,22 +1,23 @@
 // ==========================================
 // Opdracht 1. Maak een for loop die het volgende patroon in de terminal print:
-// Verwachte uitkomsten:
+// // Verwachte uitkomsten:
 // *
 // **
 // ***
 // ****
 // *****
 
-// Tip: je kunt de .repeat() methode gebruiken om een karakter een n aantal keer te herhalen...
-// Dit heb je nog niet geleerd, maar bekijk hiervoor dit MDN-artikel eens: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat
+// Tip: you can use the .repeat() method to repeat a character n number of times...
+// // You haven't learned this yet, but check out this MDN article: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat
 // ==========================================
 
+const symbol = '*'
+for(let i=0; i<5; i++) {
+    console.log(`${symbol.repeat(i+1)}`)
+}
 
 
-
-
-// ==========================================
-// Opdracht 2. Maak een for-loop die 4 keer het woord "loop..." logt, en bij de laatste (vijfde) loop het woord "klaar!"
+// ============Create a for-loop that logs the word "loop..." 4 times, and on the last (fifth) loop logs the word "done!"
 // Verwachte uitkomsten:
 // loop...
 // loop...
@@ -25,13 +26,19 @@
 // klaar!
 // ==========================================
 
-
+for (let i = 0; i <= 4; i++) {
+    if (i < 4) {
+        console.log("loop...");
+    } else {
+        console.log("done!");
+    }
+}
 
 
 
 // ==========================================
-// Opdracht 3: maak een for-loop die van 0 tot 9 loopt en de getallen 0 tot 9 logt.
-// Echter, vanaf het getal 3 komt er een > voor ieder getal te staan, en vanaf het getal 6 komt er >> voor ieder getal te staan.
+// Opdracht 3: create a for loop that goes from 0 to 9 and logs the numbers 0 to 9.
+// // However, from number 3 onwards there will be a > in front of each number, and from number 6 onwards there will be >> in front of each number
 // Verwachte uitkomsten:
 // 0
 // 1
@@ -45,8 +52,15 @@
 // >> 9
 // ==========================================
 
-
-
+for(let i=0; i<10; i++) {
+    if (i <= 2) {
+        console.log(i);
+    }else if (i>=3 && i<6) {
+     console.log('> ' + i);
+    }else if (i>=6) {
+        console.log('>> ' + i);
+    }
+}
 
 
 // ==========================================
@@ -87,5 +101,15 @@
 // etc.
 // ==========================================
 
-
+for (let i=1; i<101; i++) {
+    if (i % 15 === 0) {
+        console.log('fizzbuzz');
+    } else if (i % 3 === 0) {
+        console.log('fizz');
+    } else if (i % 5 === 0) {
+        console.log('buzz');
+    } else {
+        console.log(i);
+    }
+}
 
