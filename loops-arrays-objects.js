@@ -9,6 +9,10 @@ const scores = [
     {name: 'Rianne', score: 66, grade: null}
 ];
 
+for (let i=0; i <scores.length; i++){
+    console.log(scores[i].score);
+}
+
 // Verwachtte uitkomsten:
 // 83
 // 77
@@ -32,7 +36,22 @@ const scores = [
 // D
 // ==========================================
 
+for(let i=0; i<scores.length; i++){
+    const studentScore =scores[i].score;
+    if(studentScore >=90){
+        scores[i].grade = 'A';
+    }else if(studentScore<90 && studentScore >=80){
+        scores[i].grade='B';
+    }else if(studentScore <80 && studentScore >=70){
+        scores[i].grade='C';
+    }else if(studentScore<70 && studentScore>=60) {
+        scores[i].grade = 'D'
+    }else {
+        scores[i].grade = 'F';
+    }
 
+
+}
 
 
 
@@ -44,13 +63,32 @@ const scores = [
 // // console.log(scores) returns: [
 // // { name: 'Max', score: 83, grade: 'B' },
 // // { name: 'David', score: 77, grade: 'C' },
-// // { name: 'Khalid', score: 92, grade: 'A' },
+// // { name: 'Khalid', score: 92, grade: 'A' }
 // // { name: 'Rianne', score: 66, grade: 'D' }
 // // ];
 // ==========================================
 
 
 
+
+for(let i=0; i<scores.length; i++){
+    const studentScore =scores[i].score;
+    const name = scores[i].name
+
+    if(studentScore >=90){
+        scores[i].grade = 'A';
+    }else if(studentScore<90 && studentScore >=80){
+        scores[i].grade='B';
+    }else if(studentScore <80 && studentScore >=70){
+        scores[i].grade='C';
+    }else if(studentScore<70 && studentScore>=60) {
+        scores[i].grade = 'D'
+    }else {
+        scores[i].grade = 'F';
+    }
+
+    console.log('name: ' + name + ', score: ' + studentScore + ', grade: ' + scores[i].grade);
+}
 
 
 // ==========================================
@@ -63,7 +101,12 @@ const NOVIEmployees = [
     {firstName: 'Tessa', lastName: 'Steur'},
     {firstName: 'Mark', lastName: 'Rensen'},
 ];
-
+for (let i=0; i< NOVIEmployees.length; i++) {
+  const employee = NOVIEmployees[i];
+  const email = employee.firstName.toLowerCase() + '.' + employee.lastName.toLowerCase() + '@NOVI.nl';
+  employee.email= email;
+  console.log(NOVIEmployees);
+}
 // Bij NOVI horen de e-mailadressen altijd in het volgende format: voornaam.achternaam@novi.nl
 // Vóór het script zie je de originele objecten,
 // Na jouw script zie je de aangepaste objecten:
@@ -85,12 +128,12 @@ const NOVIEmployees = [
 // ==========================================
 
 
-
+// .toLowerCase
 
 // ==========================================
 // Opdracht 3
-// Schrijf een script die de property "neighborhood" (de buurt) invult op basis van de postcode van onze studenten.
-// Tip: is het hier handig om if-else te gebruiken, of is er wellicht een betere manier?
+// Write a script that populates the property "neighborhood" based on the zip code of our students.
+// // Tip: is it useful to use if-else here, or is there perhaps a better way?
 // 	3513 = Pijlsweerd
 //  3514 = Vogelenbuurt
 //  3512 = Binnenstad
@@ -113,6 +156,26 @@ const students = [
     {name: 'Aicha', city: 'Utrecht', zipCode: '3514', neighborhood: null},
     {name: 'Karima', city: 'Utrecht', zipCode: '3531', neighborhood: null},
 ];
+
+const zipCodeMappings = {
+    '3513': 'Pijlsweerd',
+    '3514' : 'Vogelenbuurt',
+    '3572' : 'Vogelenbuurt',
+    '3581' : 'Vogelenbuurt',
+    '3512' : 'Vogelenbuurt',
+    '3583' : 'Vogelenbuurt',
+    '3531' : 'Vogelenbuurt',
+
+}
+
+for(let i=0; i <students.length; i++) {
+const studentZipCode = students[i].zipCode
+    const neighborhood = zipCodeMappings[studentZipCode];
+students[i].neighborhood = neighborhood;
+console.log(students);
+}
+
+
 
 // Verwachte uitkomsten:
 // [
